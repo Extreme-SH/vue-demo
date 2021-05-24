@@ -1,0 +1,156 @@
+/*@charset "UTF-8";*/
+/** {*/
+/*    padding: 0;*/
+/*    margin: 0;*/
+/*}*/
+
+/*html {*/
+/*    height: 100%;*/
+/*}*/
+
+/*body {*/
+/*    height: 100%;*/
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+/*    display: flex;*/
+/*    !*实现块级元素垂直居中*!*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.image img {
+    /*实现图片自适应屏幕大小*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.login {
+    width: 300px;
+    background-color: rgba(41, 45, 62, 0.7);
+    color: aliceblue;
+    border-radius: 8px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+  left: 50%;
+    transform: translate(-50%,35%);
+
+}
+
+#parent {
+  position: relative;
+}
+
+.login .header {
+    text-align: center;
+    font-size: 30px;
+    line-height: 100px;
+}
+
+.login .input input {
+    background-color: rgb(66, 45, 62);
+    border: 0px;
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    color: aliceblue;
+    outline: none;
+    transation:0.5s;
+}
+
+
+.login .input-border {
+    /*实现颜色从左到右渐变效果*/
+    margin:0 auto;
+    background-image: linear-gradient(to right, #e8198b, #3B65BB);
+    border:0;
+    height: 45px;
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    
+}
+.login .input-border:hover {
+	width:300px;
+
+	}
+
+.login .input-border .border {
+    /*这里使用了css3的calc()方法用于自动计算宽高*/
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.login .btn-login {
+    width: 50%;
+   /*border: 2px solid #3B65BB;*/
+    margin: 0 auto;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.login .btn-login:hover {
+    background-color: #3B65BB;
+}
+
+.login .icon {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 18px;
+    border-top: 1px dashed #eee;
+    padding-top: 13px;
+}
+
+.login .icon i {
+    font-size: 18px;
+    color: rgb(255, 87, 187);
+    cursor: pointer;
+    padding: 0 5px;
+}
+.sub{
+		margin-left: 0;
+		margin-right:0;
+	
+}
+.mainfont{
+
+	font-size:100px;
+	font-family: fantasy; 	
+	
+}
+.main:hover {
+	color:#0000ff;
+	cursor: pointer;
+	animation-name:example;
+	animation-duration:4s;
+}
+.main{
+	   background-color: rgba(41, 45, 62, 0.7);
+	 transition: .3s;
+	width:200px;
+	height:140px;
+	border:1px solid;
+	border-radius: 50px;
+}
+@keyframes example {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
+

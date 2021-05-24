@@ -1,0 +1,150 @@
+h1{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    font-size: 80px;
+    color: cornsilk;
+    opacity: 0.5;
+}
+
+.blur {
+    filter: blur(6px);
+    -webkit-filter: blur(6px);  /* chrome, opera */
+}
+
+.page{
+    width: 99%;
+    margin: 0 auto;
+}
+
+.pageTop{
+    height: 150px;
+    background: gray;
+}
+
+.pageMain{
+    max-height: 6000px;
+    min-height: 600px;
+    background: cadetblue;
+}
+
+.pageBottom{
+    height: 100px;
+    background: gray;
+}
+
+.Left{
+    border-radius:0 20px 20px 0;
+    width: 20%;
+    background: khaki;
+    float: left;
+    box-shadow: -10px 10px 15px gray;
+}
+
+.right{
+    border-radius: 30px 0 0 30px;
+    width: 79%;
+    background: cornsilk;
+    float: right;
+    height: 600px;
+    max-height: 6000px;
+}
+
+li{
+    height: 25px;
+    width: 220px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    background: burlywood;
+    border-radius: 25px 0 25px 0;
+    transition: width,background-color 200ms,200ms;
+}
+li:hover{
+    width: 237px;
+    box-shadow: 3px 3px 10px gray;
+    list-style: none;
+    background: blanchedalmond;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: cornflowerblue;
+}
+
+
+.button{
+    display: inline-block;
+    background: dimgray;
+    border-radius: 20px 0 20px 0;
+    text-decoration-line: none;
+    transition-duration: 0.5s;
+    transition: width 0.5s;
+    box-shadow: 5px 5px 20px dimgray;
+    outline: none;
+}
+.button:active{
+    background: gray;
+    width: 245px;
+}
+.button:hover{
+    width: 245px;
+    background: darkgray;
+}
+
+.news{
+    text-decoration-line: none;
+    float: left;
+    width: auto;
+}
+.news:hover{
+    color: cornflowerblue;
+}
+
+.search{
+    border: none;
+    height: 30px;
+    width: 50px;
+    background: lightsalmon;
+    border-radius: 20px;
+    text-decoration-line: none;
+    outline: none;
+}
+.search:hover{
+    transition-duration: 200ms;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 10px gray;
+}
+.search:after{
+    box-shadow: 0 0 0;
+}
+
+.text{
+    width: 200px;
+    height: 16px;
+    border-radius: 5px;
+    position: relative;
+    top: 5px;
+    resize: none;
+}
+
+.InnerLeft{
+    border-right:1px solid gray;
+    width: 70%;
+    height: auto;
+    float: left;
+}
+.InnerRight{
+    padding: 10px;
+    margin: 10px;
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.InnerBottom{
+    width: 100%;
+    height: 30%;
+}

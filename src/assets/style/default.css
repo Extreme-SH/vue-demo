@@ -1,0 +1,182 @@
+.blur {
+    filter: blur(6px);
+    -webkit-filter: blur(6px);  /* chrome, opera */
+}
+
+.pageTop{
+    width: 100%;
+}
+.pageLeft{
+    padding: 5px;
+    color: gray;
+    width: 230px;
+    border-radius: 0 0 15px 15px;
+    background: black;
+    float: left;
+    backdrop-filter: blur(20px);
+    border-left: gray solid;
+    border-right: gray solid;
+    border-bottom: gray solid;
+}
+
+.pageLeft:hover{
+    color: dodgerblue;
+    transition-duration: 300ms;
+    box-shadow: 0 0 10px dodgerblue;
+    text-shadow: 0 0 15px dodgerblue;
+}
+
+.pageRight{
+    opacity: 80%;
+    width: 79%;
+    float: right;
+    background: black;
+    border-left: gray solid;
+    border-right: gray solid;
+}
+
+.pageBlur{
+    opacity: 10%;
+    width: 100%;
+    height: 1000px;
+    background: gray;
+}
+
+.pageBottom{
+    background: black;
+    opacity: 80%;
+    border-radius: 0 0 15px 15px;
+    border: gray solid;
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+
+.Inner{
+    opacity: 80%;
+    float: left;
+    padding: 5px;
+    width: 45%;
+    margin: 15px;
+    background: black;
+    border: 2px gray solid;
+    border-radius: 15px;
+}
+.Inner:hover{
+    transition-duration: 300ms;
+    box-shadow:0 0 10px dodgerblue;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: dodgerblue;
+    text-shadow: 0 0 15px dodgerblue;
+    transition-duration: 300ms;
+}
+
+.liLeft{
+    color: gray;
+    z-index: 1;
+    height: 25px;
+    width: 210px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    background: black;
+    border: 2px gray solid;
+    border-radius: 25px 0 25px 0;
+    transition: width,background-color 200ms,200ms;
+}
+.liLeft:hover{
+    color: dodgerblue;
+    text-shadow: 0 0  15px dodgerblue;
+    border: 2px dodgerblue solid;
+    width: 237px;
+    box-shadow: 0 0 15px dodgerblue;
+    list-style: none;
+    background: gray;
+}
+
+.li{
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    list-style: none;
+    margin: 5px;
+    color: white;
+    border-radius: 20px;
+    height: 25px;
+    background: black;
+    border: 5px gray double;
+    opacity: 0.5;
+}
+.li:hover{
+    text-shadow: 0 0 10px dodgerblue;
+    opacity: 1.0;
+    box-shadow: 0 0 10px dodgerblue;
+    border:5px dodgerblue double;
+    background: gray;
+    transition-duration: 300ms;
+}
+.search{
+    position: relative;
+    top: 0;
+    left: 100px;
+    outline: none;
+    align-self: center;
+    resize: none;
+    width: 80%;
+    height: 16px;
+    padding: 5px;
+    border: none;
+    border-radius: 15px 0 0 15px;
+}
+.search:hover{
+    box-shadow:0 0 15px dodgerblue;
+    transition-duration: 300ms;
+}
+
+.searchButton{
+    position: relative;
+    left: 90px;
+    margin: 5px;
+    opacity: 50%;
+    color: white;
+    outline: none;
+    height: 28px;
+    border-radius: 0 15px 15px 0;
+    background: black;
+}
+.searchButton:hover{
+    background: gray;
+    box-shadow: 0 0 15px gray;
+    text-shadow: 0 0 20px dodgerblue;
+    border: 2px dodgerblue solid;
+    transition-duration: 300ms;
+}
+
+.button{
+    width: 70px;
+    height: 30px;
+    background: black;
+    border-radius: 15px;
+    border: gray solid;
+    color: gray;
+}
+.button:hover{
+    transition-duration: 300ms;
+    color: dodgerblue;
+    background: gray;
+    border: dodgerblue solid;
+    box-shadow: 0 0 15px dodgerblue;
+    text-shadow: 0 0 15px dodgerblue;
+}
+
+.InnerBottom{
+    width: 100%;
+    height: 30%;
+}
